@@ -57,6 +57,25 @@
             font-weight: bold;
             color: #ef4444; /* red-500 */
         }
+        /* Style pour le Glossaire */
+        .glossary-item {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 0.75rem;
+            padding: 0.5rem;
+            background-color: #fff7ed; /* orange-50 */
+            border-radius: 0.5rem;
+        }
+        .glossary-item dt {
+            font-weight: bold;
+            color: #d97706; /* amber-600 */
+            min-width: 100px;
+            margin-right: 1rem;
+        }
+        .glossary-item dd {
+            flex-grow: 1;
+            color: #4b5563; /* gray-600 */
+        }
     </style>
 </head>
 <body class="p-4 sm:p-8">
@@ -190,25 +209,25 @@
             </ol>
         </section>
         
-        <!-- Section 5: Livrables Clés Détaillés -->
+        <!-- Section 5: Livrables Clés Détaillés (ENRICHISSEMENT) -->
         <section class="mb-12 card bg-white p-8 rounded-xl shadow-lg border-t-8 border-teal-600">
             <h2 class="text-3xl font-extrabold text-teal-700 mb-6 flex items-center">
                 <svg class="w-8 h-8 mr-3 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m4 4v10m0-2.5a.5.5 0 00-1 0v.5a.5.5 0 001 0v-.5zM12 11v10m4-10v10"></path></svg>
-                5. Zoom sur les Livrables Clés 🔑
+                5. Zoom sur les Livrables Clés : De la Définition à la Validation 🔑
             </h2>
             <div class="space-y-6">
                 
                 <div class="p-4 bg-teal-50 rounded-lg border border-teal-300">
                     <B class="text-teal-800 text-xl block mb-1">Cahier des Charges (CdC)</B>
                     <p class="text-gray-700">
-                        Document clé de la phase de définition. Il est l'<B>expression formelle et complète du besoin initial du client (MOA)</B>. Il sert de base contractuelle et définit le périmètre de travail.
+                        Document clé de la phase de définition. Il est l'<B>expression formelle et complète du besoin initial du client (MOA)</B>. Il sert de base contractuelle, définissant les exigences fonctionnelles, techniques et de qualité du projet.
                     </p>
                 </div>
 
                 <div class="p-4 bg-teal-50 rounded-lg border border-teal-300">
                     <B class="text-teal-800 text-xl block mb-1">Devis / Gestion du Budget</B>
                     <p class="text-gray-700">
-                        Document lié au pilier du <B>Coût</B>. Il présente l'<B>estimation des charges et des ressources</B> nécessaires à la réalisation du projet, garantissant ainsi la viabilité financière de la solution proposée.
+                        Document lié au pilier du <B>Coût</B>. Il présente l'<B>estimation des charges et des ressources</B> (humaines, matérielles) nécessaires à la réalisation du projet, garantissant ainsi la viabilité financière de la solution proposée.
                     </p>
                 </div>
 
@@ -220,9 +239,9 @@
                 </div>
 
                 <div class="p-4 bg-teal-50 rounded-lg border border-teal-300">
-                    <B class="text-teal-800 text-xl block mb-1">Spécifications Fonctionnelles Détaillées (SFD)</B>
+                    <B class="text-teal-800 text-xl block mb-1">Recommandation et Appel d'Offre (AO)</B>
                     <p class="text-gray-700">
-                        Document de conception technique qui <B>décrit en détail comment le système doit fonctionner</B> d'un point de vue utilisateur (comportement, interfaces, données). Il complète le CdC et définit le <B>Périmètre final</B>.
+                        L'AO est le document officiel qu'une entreprise (MOA) envoie pour solliciter des propositions de la part de prestataires (MOE). La <B>Recommandation</B> est la réponse du prestataire, détaillant la solution proposée, l'équipe mobilisée et les estimations budgétaires.
                     </p>
                 </div>
 
@@ -232,7 +251,74 @@
                         Livrables de la phase de <B>Conception</B>. Ils servent à structurer le contenu et l'expérience utilisateur : l'arborescence structure les pages, le zoning définit les blocs d'information, et les wireframes/prototypes simulent l'interaction.
                     </p>
                 </div>
+
+                <div class="p-4 bg-teal-50 rounded-lg border border-teal-300">
+                    <B class="text-teal-800 text-xl block mb-1">Spécifications Fonctionnelles Détaillées (SFD)</B>
+                    <p class="text-gray-700">
+                        Document de conception technique qui <B>décrit en détail comment le système doit fonctionner</B> d'un point de vue utilisateur (comportement, interfaces, données). Il complète le CdC et définit le <B>Périmètre final</B> pour l'équipe de développement.
+                    </p>
+                </div>
+                
+                <div class="p-4 bg-teal-50 rounded-lg border border-teal-300">
+                    <B class="text-teal-800 text-xl block mb-1">Tests et Recette</B>
+                    <p class="text-gray-700">
+                        La phase de <B>Tests</B> consiste à identifier les bugs. La <B>Recette</B> est la validation formelle par la MOA, qui garantit que le produit livré est <B>conforme</B> aux SFD. Cette étape est cruciale pour le passage en production.
+                    </p>
+                </div>
             </div>
+        </section>
+
+        <!-- Section 6: Glossaire des Acronymes -->
+        <section class="mb-12 card bg-white p-8 rounded-xl shadow-lg border-t-8 border-amber-600">
+            <h2 class="text-3xl font-extrabold text-amber-700 mb-6 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13a2 2 0 000 2m0-2a2 2 0 010 2m0 7.5a2 2 0 010 2m0-7.5a2 2 0 000 2M12 16.253v.25M12 11.253v.25M12 4.253v.25M6.253 12h13m-13 0a2 2 0 000 2m0-2a2 2 0 010 2m7.5-2a2 2 0 010 2m0-2a2 2 0 000 2M17.753 12h.25M4.253 12h.25"></path></svg>
+                6. Glossaire des Acronymes Clés 📚
+            </h2>
+            
+            <dl class="text-lg">
+                
+                <div class="glossary-item">
+                    <dt>CP</dt>
+                    <dd>
+                        <B>Chef de Projet</B> : La personne responsable de la gestion, de l'exécution et de la clôture d'un projet, garantissant l'équilibre du Triangle des Contraintes.
+                    </dd>
+                </div>
+                
+                <div class="glossary-item">
+                    <dt>CdC</dt>
+                    <dd>
+                        <B>Cahier des Charges</B> : Le document qui formalise l'expression des besoins du client (MOA) et sert de référence contractuelle pour le périmètre du projet.
+                    </dd>
+                </div>
+
+                <div class="glossary-item">
+                    <dt>SFD</dt>
+                    <dd>
+                        <B>Spécifications Fonctionnelles Détaillées</B> : Le document de conception technique décrivant en détail le fonctionnement du produit, utilisé par la MOE pour le développement.
+                    </dd>
+                </div>
+                
+                <div class="glossary-item">
+                    <dt>MOA</dt>
+                    <dd>
+                        <B>Maîtrise d'Ouvrage</B> : Représente le client, l'utilisateur final ou le commanditaire du projet. C'est le porteur du besoin et celui qui valide la recette.
+                    </dd>
+                </div>
+
+                <div class="glossary-item">
+                    <dt>MOE</dt>
+                    <dd>
+                        <B>Maîtrise d'Œuvre</B> : Représente l'équipe de réalisation (développeurs, intégrateurs, designers). C'est le prestataire ou l'équipe interne qui exécute le projet selon les SFD.
+                    </dd>
+                </div>
+
+                <div class="glossary-item">
+                    <dt>MEP</dt>
+                    <dd>
+                        <B>Mise en Production</B> : L'étape finale de la méthode en cascade où le produit, service ou résultat est déployé et rendu opérationnel pour les utilisateurs.
+                    </dd>
+                </div>
+            </dl>
         </section>
 
     </div>
