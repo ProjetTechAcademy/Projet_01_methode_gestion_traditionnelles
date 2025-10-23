@@ -82,7 +82,6 @@
 
     <div class="max-w-5xl mx-auto">
         <header class="text-center mb-12 p-6 bg-white rounded-xl shadow-2xl">
-            <!-- Modification du titre principal avec espace autour du double point pour la typographie française -->
             <h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-800 mb-2">01 : Les méthodes de gestion de projet traditionnelles</h1>
         </header>
 
@@ -176,39 +175,87 @@
             </div>
         </section>
 
-        <!-- Section 4: Méthode en Cascade Détaillée -->
+        <!-- Section 4: Méthode en Cascade Détaillée (ENRICHIE) -->
         <section class="mb-12 card bg-white p-8 rounded-xl shadow-lg border-t-8 border-purple-600">
             <h2 class="text-3xl font-extrabold text-purple-700 mb-6 flex items-center">
                 <svg class="w-8 h-8 mr-3 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
-                4. La Méthode en Cascade (Waterfall) 🌊
+                4. La Méthode en Cascade (Waterfall) : Processus et Limites 🌊
             </h2>
             <p class="text-lg text-gray-700 mb-4">
-                Cette méthode est <B>linéaire et séquentielle</B>. Chaque phase doit être <B>complètement terminée, validée et livrée</B> avant de pouvoir passer à la phase suivante. C'est l'approche traditionnelle.
+                La méthode en cascade, ou <B>Waterfall</B>, est l'approche traditionnelle, <B>linéaire et séquentielle</B>. Elle repose sur le principe qu'<B>une phase doit être intégralement terminée, validée et livrée avant de commencer la suivante</B>. Ce modèle est idéal lorsque le besoin est parfaitement stable et connu dès le départ.
             </p>
             
-            <h3 class="font-bold text-xl text-purple-800 mb-3">Les 6 grandes étapes de la Roadmap :</h3>
+            <h3 class="font-bold text-xl text-purple-800 mb-3">Les 6 étapes fondamentales :</h3>
             <ol class="space-y-4 text-gray-700">
                 <li class="p-3 bg-purple-50 rounded-lg border-l-4 border-purple-400">
-                    <B class="font-extrabold">1. Définition du besoin :</B> Formalisation du projet par le <B>Cahier des Charges (CdC)</B>. C'est la base de tout le travail à venir.
+                    <B class="font-extrabold">1. Définition du besoin (CdC) :</B> La base contractuelle et la seule phase où le besoin est exprimé.
                 </li>
                 <li class="p-3 bg-purple-50 rounded-lg border-l-4 border-purple-400">
-                    <B class="font-extrabold">2. Conception :</B> Phase de réflexion et de structuration du produit. Elle inclut la réalisation de l'Arborescence, du Zoning, des Wireframes et des Prototypes.
+                    <B class="font-extrabold">2. Conception :</B> Structuration du produit (Wireframes, Prototypes).
                 </li>
                 <li class="p-3 bg-purple-50 rounded-lg border-l-4 border-purple-400">
-                    <B class="font-extrabold">3. Spécifications fonctionnelles détaillées (SFD) :</B> Le document qui décrit <B>précisément le fonctionnement attendu</B> du produit pour chaque fonctionnalité, en complément du CdC.
+                    <B class="font-extrabold">3. Spécifications Détaillées (SFD) :</B> La traduction technique et fonctionnelle du CdC pour la MOE.
                 </li>
                 <li class="p-3 bg-purple-50 rounded-lg border-l-4 border-purple-400">
-                    <B class="font-extrabold">4. Réalisation :</B> La phase de <B>Développement</B> ou de mise en œuvre technique par la MOE.
+                    <B class="font-extrabold">4. Réalisation / Développement :</B> La construction technique du produit.
                 </li>
                 <li class="p-3 bg-purple-50 rounded-lg border-l-4 border-purple-400">
-                    <B class="font-extrabold">5. Tests et Recette :</B> La <B>Validation</B> formelle par la MOA (ou le client) que le produit livré est conforme aux SFD et au CdC.
+                    <B class="font-extrabold">5. Tests et Recette :</B> La validation de la conformité aux SFD et la détection des bugs.
                 </li>
                 <li class="p-3 bg-purple-50 rounded-lg border-l-4 border-purple-400">
-                    <B class="font-extrabold">6. Déploiement / Mise en Production (MEP) :</B> Lancement opérationnel du produit.
+                    <B class="font-extrabold">6. Déploiement / MEP :</B> Lancement opérationnel.
                 </li>
             </ol>
+
+            <h3 class="font-bold text-xl text-purple-800 mt-6 mb-3">Avantages et Inconvénients (Le point critique) :</h3>
+            <div class="grid md:grid-cols-2 gap-4 text-sm">
+                <div class="p-4 bg-green-100 rounded-lg border border-green-300">
+                    <B class="text-green-800 block mb-1">✅ Points Forts :</B>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li><B>Clarté :</B> Une structure simple et facile à comprendre.</li>
+                        <li><B>Contrôle :</B> Chaque phase est validée formellement avant de passer à la suivante (jalons).</li>
+                        <li><B>Documentation :</B> Le processus génère une documentation exhaustive (CdC, SFD).</li>
+                        <li><B>Prédictibilité :</B> Budgets et délais sont fixés en amont.</li>
+                    </ul>
+                </div>
+                <div class="p-4 bg-red-100 rounded-lg border border-red-300">
+                    <B class="text-red-800 block mb-1">❌ Points Faibles (Le risque majeur) :</B>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700">
+                        <li><B>Rigidité :</B> Difficile d'intégrer des changements une fois la phase de spécification terminée.</li>
+                        <li><B>Client éloigné :</B> Le client ne voit le produit qu'à la fin, augmentant le risque d'écart (Écueil de la Pastèque).</li>
+                        <li><B>Risque tardif :</B> Les problèmes majeurs sont souvent découverts lors des tests finaux.</li>
+                        <li><B>Non-adapté aux projets complexes ou innovants.</B></li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        
+
+        <!-- Section 4 BIS: Autres Méthodes -->
+        <section class="mb-12 card bg-white p-8 rounded-xl shadow-lg border-t-8 border-blue-600">
+            <h2 class="text-3xl font-extrabold text-blue-700 mb-6 flex items-center">
+                <svg class="w-8 h-8 mr-3 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10h16V7H4zm14 3a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                4 Bis. Panorama des Autres Approches de Gestion de Projet 🔄
+            </h2>
+            <p class="text-lg text-gray-700 mb-4">
+                Face aux limites de la Cascade, de nouvelles approches ont émergé pour gérer l'incertitude et la complexité, notamment dans le développement logiciel. Elles ne remplacent pas la Cascade, mais s'y opposent ou la complètent.
+            </p>
+
+            <div class="space-y-4">
+                <div class="p-4 bg-blue-50 rounded-lg border border-blue-300">
+                    <B class="text-blue-800 text-xl block mb-1">Méthodes Agiles (Ex: Scrum, Kanban)</B>
+                    <p class="text-gray-700">
+                        Se concentrent sur la livraison rapide, l'adaptation au changement et la collaboration constante avec le client. Le travail est découpé en cycles courts et itératifs (<B>Sprints</B>).
+                    </p>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-lg border border-blue-300">
+                    <B class="text-blue-800 text-xl block mb-1">Méthodes Hybrides</B>
+                    <p class="text-gray-700">
+                        Combinent la structure et la documentation de la méthode Cascade (pour la définition initiale et la gestion des budgets) avec la flexibilité des méthodes Agiles (pour la phase de réalisation/développement).
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- Section 5: Livrables Clés Détaillés (ENRICHISSEMENT) -->
         <section class="mb-12 card bg-white p-8 rounded-xl shadow-lg border-t-8 border-teal-600">
             <h2 class="text-3xl font-extrabold text-teal-700 mb-6 flex items-center">
@@ -316,6 +363,12 @@
                     <dt>MEP</dt>
                     <dd>
                         <B>Mise en Production</B> : L'étape finale de la méthode en cascade où le produit, service ou résultat est déployé et rendu opérationnel pour les utilisateurs.
+                    </dd>
+                </div>
+                <div class="glossary-item">
+                    <dt>AO</dt>
+                    <dd>
+                        <B>Appel d'Offre</B> : Processus par lequel une entreprise sollicite des propositions chiffrées de prestataires (MOE) pour la réalisation d'un projet.
                     </dd>
                 </div>
             </dl>
